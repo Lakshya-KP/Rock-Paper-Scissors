@@ -29,6 +29,9 @@ while True:
     elif user_input == "scissors" and computer_pick == "paper":
         print("You won!")
         user_wins += 1
+   
+    elif user_input == computer_input:
+        print('Tie!') 
     
     else:
         print("You Lost!")    
@@ -38,5 +41,7 @@ print("You won",user_wins,"times")
 print("Computer won",computer_wins,"times")
 if user_wins > computer_wins:
     print("You defeated the Computer.")
-else: print("You were defeated by the Computer.")
+elif user_wins < computer_wins:
+    print("You were defeated by the Computer.")
+else: print("It's a Tie!") 
 print("Goodbye!")        
